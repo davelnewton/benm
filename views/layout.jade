@@ -2,8 +2,16 @@ doctype html
 html
   head
     title My App
+    link(rel="stylesheet", type="text/css", href="css/myapp.css")
   body
     #header
-      h1 OHAI
-      hr
-      block content
+      h1 My Contacts
+      a(href="/#") Contact List
+      | |
+      a(href="/#add") New Contact
+      | |
+      a(href="/sample") Sample Page
+    br
+    #content
+      block body
+    script(type="text/javascript", src="js/myapp.js")
