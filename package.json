@@ -21,6 +21,7 @@
     "MD5": "~1.2.0"
   },
   "devDependencies": {
+    "jade": "~1.1.5",
     "bower": "~1.2.8",
     "grunt": "~0.4.1",
     "grunt-contrib-concat": "~0.3.0",
@@ -50,6 +51,7 @@
     "grunt-contrib-handlebars": "~0.6.0",
     "grunt-contrib-cssmin": "~0.7.0",
     "hbsfy": "~1.0.0",
-    "grunt-shell-spawn": "~0.3.0"
+    "grunt-shell-spawn": "~0.3.0",
+    "grunt-contrib-jade": "~0.9.1"
   }
 }

@@ -214,8 +214,25 @@ module.exports = function(grunt) {
             all: ['Gruntfile.js', 'client/src/**/*.js', 'client/spec/**/*.js'],
             dev: ['client/src/**/*.js'],
             test: ['client/spec/**/*.js']
+        },
+
+        jade: {
+            compile: {
+                options: {
+                    client: false,
+                    pretty: true
+                },
+                files: [{
+                    src: "**/*.jade",
+                    dest: "views/",
+                    ext: ".html",
+                    cwd: "views/"
+                }]
+            }
         }
     });
+
+    grunt.loadNpmTasks("grunt-contrib-jade");
 
     grunt.registerTask('init:dev', ['clean', 'bower', 'browserify:vendor']);
 
